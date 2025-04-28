@@ -1,4 +1,6 @@
 # SimpleChat
+#### Video Demo:  <https://youtu.be/PbOIr3WHM6Q>
+#### Description:
 
 SimpleChat is a minimalistic web-based chat application designed for easy deployment and extensibility.  
 It features user registration, local storage of user details, chat messaging, and a sleek dark-themed responsive UI.
