@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Popup for user details -->
+    <div id="user-popup" class="popup">
+        <div class="popup-content">
+            <h2>Enter Your Details</h2>
+            <label for="username">Name:</label>
+            <input type="text" id="username" placeholder="Your Name">
+            <label for="server-address">Server Address:</label>
+            <input type="text" id="server-address" placeholder="localhost:5000">
+            <button id="save-details-button">Save</button>
+        </div>
+    </div>
+
+    <div class="container" id="main-container" style="display: none;">
+        <!-- Left side: Contact names -->
+        <div class="contacts">
+            <h2>Contacts</h2>
+            <ul id="contact-list">
+            </ul>
+            <button id="settings-button">Settings</button>
+        </div>
+
+        <!-- Right side: Chat area -->
+        <div class="chat">
+            <div class="chat-header">
+                <h2 id="chat-header-name">Chat with </h2>
+            </div>
+            <div class="error" id="error">
+                Connection error!
+            </div>
+            <div class="hint" id="hint">
+                Select chat from left
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- <div class="message">
+                    <span class="sender">John Doe:</span>
+                    <span class="text">Hello! How are you?</span>
+                </div>
+                <div class="message">
+                    <span class="sender">You:</span>
+                    <span class="text">I'm good, thanks! How about you?</span>
+                </div> -->
+            </div>
+            <div class="chat-input">
+                <textarea id="message-input" placeholder="Type your message..."></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
